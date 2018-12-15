@@ -4,6 +4,7 @@ if [ $? -eq 0 ]; then
     echo "Online"
 else
     echo "Offline , abos edak connect el Internet"
+    exit
 fi
 sudo apt update
 sudo apt-get install python3
