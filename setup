@@ -1,0 +1,32 @@
+#!/bin/bash
+echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "Online"
+else
+    echo "Offline , abos edak connect el Internet"
+fi
+sudo apt update
+sudo apt-get install python3
+sudo apt install python3-pip
+pip3 --version
+sudo apt install build-essential libssl-dev libffi-dev python3-dev
+sudo apt-get install wget
+sudo apt-get install git
+sudo pip3 install --user --upgrade tensorflow
+pip install keras
+cd /home/$USER/Downloads
+file=/home/$USER/Downloads/pycharm
+if [ -d "$file" ]; then
+    echo "File already exists"
+else 
+    mkdir pycharm
+fi 
+cd pycharm
+wget  -P /home/$USER/Downloads/pycharm "https://download.jetbrains.com/python/pycharm-community-2018.3.1.tar.gz"
+tar -xzf pycharm-community-2018.3.1.tar.gz
+cd cd pycharm-community-2018.3.1/bin
+./pycharm.sh
+
+
+
+
