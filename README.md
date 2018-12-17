@@ -5,3 +5,4 @@ Bash script tested on ubuntu to install
 - Tensorflow
 - Keras 
 - Git
+added
