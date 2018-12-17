@@ -5,3 +5,6 @@ Bash script tested on ubuntu to install
 - Tensorflow
 - Keras 
 - Git
+## Usage 
+- clone this repository into your local
+- Run `./setup`into terminal
