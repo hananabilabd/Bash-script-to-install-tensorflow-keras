@@ -8,3 +8,5 @@ Bash script tested on ubuntu to install
 ## Usage 
 - clone this repository into your local
 - Run `./setup`into terminal
+
+
