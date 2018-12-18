@@ -6,6 +6,7 @@ Bash script tested on ubuntu to install
 - Keras 
 - Git
 - PyQt4
+- QT Designer
 ## Usage 
 - clone this repository into your local
 - Run `./setup`into terminal
