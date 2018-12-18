@@ -19,6 +19,7 @@ pip install keras
 sudo apt-get update
 sudo apt-get install build-essential cmake pkg-config
 sudo apt-get install python-opencv
+sudo apt-get install python3-pyqt4
 cd /home/$USER/Downloads
 file=/home/$USER/Downloads/pycharm
 if [ -d "$file" ]; then
