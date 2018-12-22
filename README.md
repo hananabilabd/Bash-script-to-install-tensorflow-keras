@@ -2,6 +2,7 @@
 Bash script tested on ubuntu to install 
 - Python3
 - pycharm 
+- opencv
 - Tensorflow
 - Keras 
 - Git
