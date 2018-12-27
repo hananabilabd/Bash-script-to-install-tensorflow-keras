@@ -22,25 +22,26 @@ sudo apt-get install python-opencv
 sudo pip3 install opencv-python
 sudo apt-get install python3-pyqt4
 sudo apt-get install python-qt4 qt4-designer
-sudo pip3 install --user --upgrade tensorflow
-cd /home/$USER/Downloads
-file=/home/$USER/Downloads/pycharm
+sudo chmod 777 testTensorKeras
+./testTensorKeras
+python3 testOpenCV.py
+#cd /home/$USER/Downloads
+read -p "Do you wanna install Pycharm , Enter y or n : " input
+if  [ "$input" = "y" ] ;then
+file=pycharm
 if [ -d "$file" ]; then
     echo "File already exists"
 else 
     mkdir pycharm
 fi 
 cd pycharm
-wget  -P /home/$USER/Downloads/pycharm "https://download.jetbrains.com/python/pycharm-#community-2018.3.1.tar.gz"
+wget  -P /home/$USER/Downloads/pycharm "https://download.jetbrains.com/python/pycharm-community-2018.3.2.tar.gz"
 tar -xzf pycharm-community-2018.3.1.tar.gz
 cd cd pycharm-community-2018.3.1/bin
 ./pycharm.sh
-echo $workingDir
-cd $workingDir
-chmod 777 testTensorKeras
-./testTensorKeras
-python3 testOpenCV.py
-
-
-
+echo "Pycharm is installed successfully"
+else 
+	echo "Installation of pycharm aborted by user"
+fi
+echo "Ended successfully"
 
