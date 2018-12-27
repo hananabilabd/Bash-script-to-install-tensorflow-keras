@@ -19,6 +19,7 @@ sudo pip3 install keras
 sudo apt-get update
 sudo apt-get install build-essential cmake pkg-config
 sudo apt-get install python-opencv
+sudo pip3 install opencv-python
 sudo apt-get install python3-pyqt4
 sudo apt-get install python-qt4 qt4-designer
 cd /home/$USER/Downloads
