@@ -22,6 +22,7 @@ sudo apt-get install python-opencv
 sudo pip3 install opencv-python
 sudo apt-get install python3-pyqt4
 sudo apt-get install python-qt4 qt4-designer
+sudo pip3 install --user --upgrade tensorflow
 cd /home/$USER/Downloads
 file=/home/$USER/Downloads/pycharm
 if [ -d "$file" ]; then
