@@ -25,6 +25,7 @@ sudo apt-get install python-qt4 qt4-designer
 sudo chmod 777 testTensorKeras
 ./testTensorKeras
 python3 testOpenCV.py
+python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
 #cd /home/$USER/Downloads
 read -p "Do you wanna install Pycharm , Enter y or n : " input
 if  [ "$input" = "y" ] ;then
