@@ -15,7 +15,7 @@ sudo apt install build-essential libssl-dev libffi-dev python3-dev
 sudo apt-get install wget
 sudo apt-get install git
 sudo pip3 install --user --upgrade tensorflow
-pip install keras
+sudo pip3 install keras
 sudo apt-get update
 sudo apt-get install build-essential cmake pkg-config
 sudo apt-get install python-opencv
