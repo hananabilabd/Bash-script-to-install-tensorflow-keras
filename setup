@@ -32,14 +32,8 @@ python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduc
 #cd /home/$USER/Downloads
 read -p "Do you wanna install Pycharm , Enter y or n : " input
 if  [ "$input" = "y" ] ;then
-file=pycharm
-if [ -d "$file" ]; then
-    echo "File already exists"
-else 
-    mkdir pycharm
-fi 
-cd pycharm
-wget  -P /home/$USER/Downloads/pycharm "https://download.jetbrains.com/python/pycharm-community-2018.3.2.tar.gz"
+#file=pycharm
+wget "https://download.jetbrains.com/python/pycharm-community-2018.3.2.tar.gz"
 tar -xzf pycharm-community-2018.3.1.tar.gz
 cd cd pycharm-community-2018.3.1/bin
 ./pycharm.sh
